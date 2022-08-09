@@ -6,4 +6,4 @@ SFML Raycasting textured with minimap.
 ## YouTube
 
 My channel : https://www.youtube.com/channel/UCcEkxe69YprtYS2dDW7w5-Q  
-Video explain this code : (soon...)
+Video explain this code : https://www.youtube.com/watch?v=Xh2i-BcLji8
