@@ -8,8 +8,6 @@ const int vitesse = 15; // Speed player
 const int v_angle = 10; // Speed angle
 const int angle_vision = 64; // FOV
 const int precision_angle = 3; //equals to number of values in 1 degre
-const float epsilon = 0.1;
-
 
 sf::RenderWindow window;
 sf::ContextSettings options;
@@ -18,7 +16,6 @@ const int rayon = 1; // Radius of player (for minimmap)
 const int dist_tol = 200; // brightness
 float w_d_d = (float) width / (angle_vision*precision_angle);
 
-float angle_mouse;
 int taille_image;
 
 std::array<int, nb_case_w*nb_case_h> const map {
