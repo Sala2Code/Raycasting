@@ -7,7 +7,6 @@
 #include <array>
 #include <string>
 
-#include <cmath>
 #include <math.h>       
 #define PI 3.14159265
 
@@ -47,18 +46,9 @@ int main()
 
         if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left)){
             player.angle+= v_angle;
-            player.view.rotate(-v_angle);
-            if (player.angle<0){
-                player.angle = 360 - player.angle;
-            }
-
         }
         if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right)){
             player.angle-= v_angle;
-            player.view.rotate(v_angle); 
-            if (player.angle<0){
-                player.angle = 360 - player.angle;
-            } 
         }
         if (sf::Keyboard::isKeyPressed(sf::Keyboard::Up)){
             if(!isCollision(player.x+cos(player.angle*PI/180)*vitesse, player.y-sin(player.angle*PI/180)*vitesse)){
@@ -93,7 +83,6 @@ int main()
             }
         }
         window.draw(player.forme);
-        window.draw(player.view);
         window.display();
     }
 
